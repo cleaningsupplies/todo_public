@@ -1,0 +1,90 @@
+.inputContainer {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 45%;
+    align-items: center;
+    align-content: center;
+}
+
+.inputContainer > span {
+    padding-left: 20px;
+}
+
+.inputContainer > input {
+    height: 23px;
+    width: 23px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: #454C64;
+    cursor: pointer;
+    flex-direction: row;
+    flex-shrink: 0.5;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+span{
+    width: 90%;
+    display: flex;
+    text-align: left;
+    font-size: 23px;
+    word-wrap: break-word;
+}
+
+.inputContainer > input:checked{
+    background-image: url("../img/checkmark.png");
+    background-position: center;
+    background-size: 20px;
+}
+
+.inputContainer > input:checked + span{
+    text-decoration: line-through;
+    text-decoration-color: #b46378;
+}
+
+.delete{
+    width: 20px;
+    height: 20px;
+    background: url("../img/delete.png") no-repeat;
+    background-position: center;
+    background-size: 20px;
+
+}
+
+.delete:hover{
+    width: 20px;
+    height: 20px;
+    background: url("../img/delete_hover.png") no-repeat;
+    background-position: center;
+    background-size: 20px;
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    width: 45%;
+    border-top: 1px solid #1E202E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
