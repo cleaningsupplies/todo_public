@@ -4,17 +4,20 @@
     align-items: center;
     user-select: none;
     overflow-y: auto;
-    height: 65vh;
+    height: 70vh;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
 
 .TodoList::-webkit-scrollbar {
     display: none;
 }
-  
-.TodoList {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
+
+@media only screen and (max-width: 600px) {
+    .TodoList{
+        height: 60vh;
+        margin-bottom: 55px; 
+    }
+
 }
-
-
