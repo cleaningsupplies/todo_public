@@ -53,7 +53,6 @@ span{
     background: url("../img/delete.png") no-repeat;
     background-position: center;
     background-size: 20px;
-
 }
 
 .delete:hover{
@@ -62,7 +61,6 @@ span{
     background: url("../img/delete_hover.png") no-repeat;
     background-position: center;
     background-size: 20px;
-
 }
 
 hr {
@@ -71,6 +69,26 @@ hr {
     border: 0;
     width: 45%;
     border-top: 1px solid #1E202E;
+}
+
+@media only screen and (max-width: 600px) {
+    .inputContainer, hr {
+        width: 85%;
+    }
+
+    .inputContainer > input {
+        height: 20px;
+        width: 20px;
+    }
+
+    .delete:hover{
+        width: 20px;
+        height: 20px;
+        background: url("../img/delete.png") no-repeat;
+        background-position: center;
+        background-size: 20px;
+    }
+
 }
 
 

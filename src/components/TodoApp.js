@@ -25,7 +25,6 @@ export default function TodoApp() {
 
     useEffect(() => {
         //getTodos();
-        
         //Using local stroage to save todos
         const todos = JSON.parse(window.localStorage.getItem("TODOS"));
         if(todos){

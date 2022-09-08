@@ -6,21 +6,22 @@
 
 .userInput {
     width: 50%;
-    border: 0;
+    border-radius: 0px;
+    border: none;
     border-bottom: 2px solid #464c64;
     outline: 0;
     color: #cfcfcf;
-    font-size: 4vw;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
-    margin-bottom: 3%;
+    margin-bottom: 4vh;
+    padding-bottom: 6px;  
 }
 
   
 .userInput:focus {
     padding-bottom: 6px;  
-    border-width: 3px;
+    border-width: 2px;
     border-image: linear-gradient(to right, #464c64,#78505b);
     border-image-slice: 1;
 }
@@ -33,10 +34,13 @@
     background-image: url("../img/add.png");
     background-position: center;
     background-size: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
     height: 50px;
     width: 50px;
     border: none;
     text-decoration: none;
+    margin-bottom: 5vh;
     -webkit-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out;
 }
@@ -44,4 +48,14 @@
 
 .submit:hover{
     background-image: url("../img/add_hover.png");
+}
+
+@media only screen and (max-width: 600px) {
+    .userInput {
+        width: 90%;
+    }
+
+    .submit:hover{
+        background-image: url("../img/add.png");
+    }
 }

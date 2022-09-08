@@ -12,11 +12,39 @@
     border-radius: 5px;
     border: none;
     scroll-margin-right: 1%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     height: 50px;
     margin: 2%;
 }
 
 .deleteAll:hover, .deleteDone:hover {
     background-color: #b46378;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .deleteAll, .deleteDone {
+        background-color: #454C64;
+        border-radius: 5px;
+        border: none;
+        font-size: 4vw;
+        height: 50px;
+        width: 45%;
+        margin: 2%;
+    }
+
+    .deleteAll:hover, .deleteDone:hover {
+        background-color: #454C64;
+    }
 }
