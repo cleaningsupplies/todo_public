@@ -31,7 +31,7 @@ export default function TodoApp() {
             setTodos(todos);
         }
     },[]);
-
+    // },[todos]);
     
     useEffect(() => {
         window.localStorage.setItem("TODOS", JSON.stringify(todos));
