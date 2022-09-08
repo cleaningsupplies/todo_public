@@ -82,8 +82,8 @@ export default function TodoApp() {
             <UserInput addTodo={addTodo}/>
             <TodoList todos={todos} checkTodo={checkTodo} deleteItem={deleteItem}/>
             <div className='buttonContainer'>
-                <button className="deleteAll" onClick={deleteAll}>Delete All</button>
                 <button className="deleteDone" onClick={deleteDone}>Delete Done</button>
+                <button className="deleteAll" onClick={deleteAll}>Delete All</button> 
             </div>
         </div>
     )

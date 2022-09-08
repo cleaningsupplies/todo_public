@@ -44,6 +44,11 @@
         margin: 2%;
     }
 
+    .deleteAll{
+        background-color: #B46378;
+    }
+
+
     .deleteAll:hover, .deleteDone:hover {
         background-color: #454C64;
     }
