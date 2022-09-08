@@ -2,9 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     user-select: none;
-    padding-bottom: 55px;
+    overflow-y: auto;
+    height: 65vh;
+}
+
+
+.TodoList::-webkit-scrollbar {
+    display: none;
+}
+  
+.TodoList {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
 
