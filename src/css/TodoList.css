@@ -16,8 +16,7 @@
 
 @media only screen and (max-width: 600px) {
     .TodoList{
-        height: 60vh;
-        margin-bottom: 55px; 
+        height: 55vh;
     }
 
 }
