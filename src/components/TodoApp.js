@@ -45,6 +45,8 @@ export default function TodoApp() {
         // });
     }
 
+
+
     function checkTodo(todo){
         const items = [...todos];
         const item = items.find(item => item.id === todo.id);
@@ -77,8 +79,10 @@ export default function TodoApp() {
         // })
     }
 
+
+
     return (
-        <div>
+        <div className='appContainer'>
             <UserInput addTodo={addTodo}/>
             <TodoList todos={todos} checkTodo={checkTodo} deleteItem={deleteItem}/>
             <div className='buttonContainer'>

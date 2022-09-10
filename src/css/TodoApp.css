@@ -1,48 +1,46 @@
-.buttonContainer{
+.appContainer{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    width: 15vw;
-    right: 2%;
-    bottom: 2%;
+}
+
+.buttonContainer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
 }
 
 .deleteAll, .deleteDone {
     background-color: #454C64;
     border-radius: 5px;
     border: none;
-    scroll-margin-right: 1%;
-    font-size: 1.5vw;
-    height: 50px;
-    margin: 2%;
+    font-size: 1.8vw;
+    width: 20vw;
+    height: 6vh;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
+.deleteAll{
+    background-color: #B46378;
+}
+
+
 .deleteAll:hover, .deleteDone:hover {
-    background-color: #b46378;
+    background-color: #B23557;
 }
 
 @media only screen and (max-width: 600px) {
 
-    .buttonContainer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        margin-bottom: 5%;
-    }
-    
     .deleteAll, .deleteDone {
         background-color: #454C64;
         border-radius: 5px;
         border: none;
         font-size: 4vw;
-        height: 50px;
         width: 45%;
-        margin: 2%;
     }
 
     .deleteAll{
